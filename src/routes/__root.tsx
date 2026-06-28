@@ -87,6 +87,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@goholiday" },
+      { property: "og:title", content: "GoHoliday — Flights, Hotels, Holiday Packages & More" },
+      { name: "twitter:title", content: "GoHoliday — Flights, Hotels, Holiday Packages & More" },
+      { name: "description", content: "Voyage Pro is a comprehensive travel booking platform offering flights, hotels, packages, and more." },
+      { property: "og:description", content: "Voyage Pro is a comprehensive travel booking platform offering flights, hotels, packages, and more." },
+      { name: "twitter:description", content: "Voyage Pro is a comprehensive travel booking platform offering flights, hotels, packages, and more." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cb48aeec-cd22-40d7-bc6c-dba0f27e3a09/id-preview-33ee351a--d32d8b09-529c-426b-89b2-e519bb2a3d33.lovable.app-1782659010411.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cb48aeec-cd22-40d7-bc6c-dba0f27e3a09/id-preview-33ee351a--d32d8b09-529c-426b-89b2-e519bb2a3d33.lovable.app-1782659010411.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
