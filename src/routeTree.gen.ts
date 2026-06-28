@@ -9,8 +9,134 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VisaRouteImport } from './routes/visa'
+import { Route as TrainsRouteImport } from './routes/trains'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as RefundRouteImport } from './routes/refund'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as PartnersRouteImport } from './routes/partners'
+import { Route as PackagesRouteImport } from './routes/packages'
+import { Route as OffersRouteImport } from './routes/offers'
+import { Route as InsuranceRouteImport } from './routes/insurance'
+import { Route as HotelsRouteImport } from './routes/hotels'
+import { Route as FlightsRouteImport } from './routes/flights'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CareersRouteImport } from './routes/careers'
+import { Route as CancellationRouteImport } from './routes/cancellation'
+import { Route as CabsRouteImport } from './routes/cabs'
+import { Route as BusRouteImport } from './routes/bus'
+import { Route as BlogRouteImport } from './routes/blog'
+import { Route as ActivitiesRouteImport } from './routes/activities'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const VisaRoute = VisaRouteImport.update({
+  id: '/visa',
+  path: '/visa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrainsRoute = TrainsRouteImport.update({
+  id: '/trains',
+  path: '/trains',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RefundRoute = RefundRouteImport.update({
+  id: '/refund',
+  path: '/refund',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PartnersRoute = PartnersRouteImport.update({
+  id: '/partners',
+  path: '/partners',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PackagesRoute = PackagesRouteImport.update({
+  id: '/packages',
+  path: '/packages',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OffersRoute = OffersRouteImport.update({
+  id: '/offers',
+  path: '/offers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsuranceRoute = InsuranceRouteImport.update({
+  id: '/insurance',
+  path: '/insurance',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HotelsRoute = HotelsRouteImport.update({
+  id: '/hotels',
+  path: '/hotels',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FlightsRoute = FlightsRouteImport.update({
+  id: '/flights',
+  path: '/flights',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CareersRoute = CareersRouteImport.update({
+  id: '/careers',
+  path: '/careers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CancellationRoute = CancellationRouteImport.update({
+  id: '/cancellation',
+  path: '/cancellation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CabsRoute = CabsRouteImport.update({
+  id: '/cabs',
+  path: '/cabs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusRoute = BusRouteImport.update({
+  id: '/bus',
+  path: '/bus',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ActivitiesRoute = ActivitiesRouteImport.update({
+  id: '/activities',
+  path: '/activities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +145,326 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/activities': typeof ActivitiesRoute
+  '/blog': typeof BlogRoute
+  '/bus': typeof BusRoute
+  '/cabs': typeof CabsRoute
+  '/cancellation': typeof CancellationRoute
+  '/careers': typeof CareersRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/flights': typeof FlightsRoute
+  '/hotels': typeof HotelsRoute
+  '/insurance': typeof InsuranceRoute
+  '/offers': typeof OffersRoute
+  '/packages': typeof PackagesRoute
+  '/partners': typeof PartnersRoute
+  '/privacy': typeof PrivacyRoute
+  '/refund': typeof RefundRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
+  '/trains': typeof TrainsRoute
+  '/visa': typeof VisaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/activities': typeof ActivitiesRoute
+  '/blog': typeof BlogRoute
+  '/bus': typeof BusRoute
+  '/cabs': typeof CabsRoute
+  '/cancellation': typeof CancellationRoute
+  '/careers': typeof CareersRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/flights': typeof FlightsRoute
+  '/hotels': typeof HotelsRoute
+  '/insurance': typeof InsuranceRoute
+  '/offers': typeof OffersRoute
+  '/packages': typeof PackagesRoute
+  '/partners': typeof PartnersRoute
+  '/privacy': typeof PrivacyRoute
+  '/refund': typeof RefundRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
+  '/trains': typeof TrainsRoute
+  '/visa': typeof VisaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/activities': typeof ActivitiesRoute
+  '/blog': typeof BlogRoute
+  '/bus': typeof BusRoute
+  '/cabs': typeof CabsRoute
+  '/cancellation': typeof CancellationRoute
+  '/careers': typeof CareersRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/flights': typeof FlightsRoute
+  '/hotels': typeof HotelsRoute
+  '/insurance': typeof InsuranceRoute
+  '/offers': typeof OffersRoute
+  '/packages': typeof PackagesRoute
+  '/partners': typeof PartnersRoute
+  '/privacy': typeof PrivacyRoute
+  '/refund': typeof RefundRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
+  '/trains': typeof TrainsRoute
+  '/visa': typeof VisaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/activities'
+    | '/blog'
+    | '/bus'
+    | '/cabs'
+    | '/cancellation'
+    | '/careers'
+    | '/contact'
+    | '/faq'
+    | '/flights'
+    | '/hotels'
+    | '/insurance'
+    | '/offers'
+    | '/packages'
+    | '/partners'
+    | '/privacy'
+    | '/refund'
+    | '/sitemap.xml'
+    | '/terms'
+    | '/trains'
+    | '/visa'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/activities'
+    | '/blog'
+    | '/bus'
+    | '/cabs'
+    | '/cancellation'
+    | '/careers'
+    | '/contact'
+    | '/faq'
+    | '/flights'
+    | '/hotels'
+    | '/insurance'
+    | '/offers'
+    | '/packages'
+    | '/partners'
+    | '/privacy'
+    | '/refund'
+    | '/sitemap.xml'
+    | '/terms'
+    | '/trains'
+    | '/visa'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/activities'
+    | '/blog'
+    | '/bus'
+    | '/cabs'
+    | '/cancellation'
+    | '/careers'
+    | '/contact'
+    | '/faq'
+    | '/flights'
+    | '/hotels'
+    | '/insurance'
+    | '/offers'
+    | '/packages'
+    | '/partners'
+    | '/privacy'
+    | '/refund'
+    | '/sitemap.xml'
+    | '/terms'
+    | '/trains'
+    | '/visa'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ActivitiesRoute: typeof ActivitiesRoute
+  BlogRoute: typeof BlogRoute
+  BusRoute: typeof BusRoute
+  CabsRoute: typeof CabsRoute
+  CancellationRoute: typeof CancellationRoute
+  CareersRoute: typeof CareersRoute
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  FlightsRoute: typeof FlightsRoute
+  HotelsRoute: typeof HotelsRoute
+  InsuranceRoute: typeof InsuranceRoute
+  OffersRoute: typeof OffersRoute
+  PackagesRoute: typeof PackagesRoute
+  PartnersRoute: typeof PartnersRoute
+  PrivacyRoute: typeof PrivacyRoute
+  RefundRoute: typeof RefundRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TermsRoute: typeof TermsRoute
+  TrainsRoute: typeof TrainsRoute
+  VisaRoute: typeof VisaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/visa': {
+      id: '/visa'
+      path: '/visa'
+      fullPath: '/visa'
+      preLoaderRoute: typeof VisaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/trains': {
+      id: '/trains'
+      path: '/trains'
+      fullPath: '/trains'
+      preLoaderRoute: typeof TrainsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refund': {
+      id: '/refund'
+      path: '/refund'
+      fullPath: '/refund'
+      preLoaderRoute: typeof RefundRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/partners': {
+      id: '/partners'
+      path: '/partners'
+      fullPath: '/partners'
+      preLoaderRoute: typeof PartnersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/packages': {
+      id: '/packages'
+      path: '/packages'
+      fullPath: '/packages'
+      preLoaderRoute: typeof PackagesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/offers': {
+      id: '/offers'
+      path: '/offers'
+      fullPath: '/offers'
+      preLoaderRoute: typeof OffersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insurance': {
+      id: '/insurance'
+      path: '/insurance'
+      fullPath: '/insurance'
+      preLoaderRoute: typeof InsuranceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hotels': {
+      id: '/hotels'
+      path: '/hotels'
+      fullPath: '/hotels'
+      preLoaderRoute: typeof HotelsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/flights': {
+      id: '/flights'
+      path: '/flights'
+      fullPath: '/flights'
+      preLoaderRoute: typeof FlightsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/careers': {
+      id: '/careers'
+      path: '/careers'
+      fullPath: '/careers'
+      preLoaderRoute: typeof CareersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cancellation': {
+      id: '/cancellation'
+      path: '/cancellation'
+      fullPath: '/cancellation'
+      preLoaderRoute: typeof CancellationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cabs': {
+      id: '/cabs'
+      path: '/cabs'
+      fullPath: '/cabs'
+      preLoaderRoute: typeof CabsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bus': {
+      id: '/bus'
+      path: '/bus'
+      fullPath: '/bus'
+      preLoaderRoute: typeof BusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/activities': {
+      id: '/activities'
+      path: '/activities'
+      fullPath: '/activities'
+      preLoaderRoute: typeof ActivitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,17 +477,28 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ActivitiesRoute: ActivitiesRoute,
+  BlogRoute: BlogRoute,
+  BusRoute: BusRoute,
+  CabsRoute: CabsRoute,
+  CancellationRoute: CancellationRoute,
+  CareersRoute: CareersRoute,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  FlightsRoute: FlightsRoute,
+  HotelsRoute: HotelsRoute,
+  InsuranceRoute: InsuranceRoute,
+  OffersRoute: OffersRoute,
+  PackagesRoute: PackagesRoute,
+  PartnersRoute: PartnersRoute,
+  PrivacyRoute: PrivacyRoute,
+  RefundRoute: RefundRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TermsRoute: TermsRoute,
+  TrainsRoute: TrainsRoute,
+  VisaRoute: VisaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
